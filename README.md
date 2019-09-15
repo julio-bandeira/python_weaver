@@ -7,6 +7,9 @@ Programa realizado com base no video sobre o mesmo porem em c++ do canal Univers
 
 Link: https://www.youtube.com/watch?v=YZtx4jNNbx8&t=234s
 
+## Bibliotecas
+As bibliotecas utilizadas foram OpenCV, Math e Tkinter
+
 ## Imagem
 O programa abrira uma janela para selecionar uma imagem
 
