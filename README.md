@@ -1,7 +1,7 @@
 # pyhton_weaver
 Forme imagens por meio de linhas
 
-Algoritmo Desenvolvido em Python 3 com o intuito de aprendizado
+Algoritmo Desenvolvido em Python 3.7 , utilizando PyCharm como IDE com o intuito de aprendizado
 
 Programa realizado com base no video sobre o mesmo porem em c++ do canal Universo Programado
 
