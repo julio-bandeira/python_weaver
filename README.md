@@ -18,7 +18,7 @@ A imagem em si deve ter certos requisitos...
 Afim de manter a uniformidade do circulo, a imagem deve ter altura e largura identicas
 
 Para melhor experiencia utilize imagens entre 500x500 a 1000x1000 pixels
-![alt text](https://github.com/julio-bandeira/pyhton_weaver/blob/master/demonstration.jpg)
+![alt text](https://github.com/julio-bandeira/pyhton_weaver/blob/master/exemplo.png)
 
 ## Pregos
 O algoritimo lhe permitira escolher o numero de pregos a serem utilizados o recomendavel são 210 pregos
@@ -32,3 +32,5 @@ O limite de linhas atualmente é fixo em 1800...
 
 ## Salvamento
 Após o processo ser finalizado o será informado o termino no terminal e uma janela identica será aberta, identificando o final do processo para poder observalo, apertando qualquer tecla ou propriamente fechando a imagem, será aberta uma janela para salvar os caminhos de ponto a ponto, escolha o local e digite o nome do arquivo, não há necessidade de informar a extensão, a extensão .txt já está configurada como padrão.
+
+![alt text](https://github.com/julio-bandeira/pyhton_weaver/blob/master/demonstration.jpg)
