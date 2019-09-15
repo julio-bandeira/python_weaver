@@ -29,3 +29,6 @@ O programa levara um tempo para processar toda a imagem o que pode variar confor
 O algoritimo irá ler a partir de um ponto, uma linha de pixels até outro ponto, fara isso para todos os outro pontos, será traçada um linha até o ponto que mais tiver pixels preto e o processo irá se repetir apartir deste novo ponto e assim seguira até não haver mais pixels pretos entre os pontos ou atingir o numero de 1800 linhas
 
 O limite de linhas atualmente é fixo em 1800...
+
+## Salvamento
+Após o processo ser finalizado o será informado o termino no terminal e uma janela identica será aberta, identificando o final do processo para poder observalo, apertando qualquer tecla ou propriamente fechando a imagem, será aberta uma janela para salvar os caminhos de ponto a ponto, escolha o local e digite o nome do arquivo, não há necessidade de informar a extensão, a extensão .txt já está configurada como padrão.
