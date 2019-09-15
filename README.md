@@ -15,6 +15,7 @@ A imagem em si deve ter certos requisitos...
 Afim de manter a uniformidade do circulo, a imagem deve ter altura e largura identicas
 
 Para melhor experiencia utilize imagens entre 500x500 a 1000x1000 pixels
+![alt text](https://github.com/julio-bandeira/pyhton_weaver/blob/master/demonstration.jpg)
 
 ## Pregos
 O algoritimo lhe permitira escolher o numero de pregos a serem utilizados o recomendavel são 210 pregos
