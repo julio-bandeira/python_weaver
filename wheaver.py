@@ -34,8 +34,8 @@ def pixels_analysis(point_1, point_2):
 
 
 def clean_image():
-    for y_axis in range(0, image.shape[0]):
-        for x_axis in range(0, image.shape[1]):
+    for y_axis in range(0, cleaned.shape[0]):
+        for x_axis in range(0, cleaned.shape[1]):
             cleaned.itemset(y_axis, x_axis, 0, 255)
             cleaned.itemset(y_axis, x_axis, 1, 255)
             cleaned.itemset(y_axis, x_axis, 2, 255)
