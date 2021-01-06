@@ -2,7 +2,7 @@ import cv2
 import tkinter
 from tkinter import filedialog
 from math import sin, cos, radians
-
+import ctypes
 
 def black(y_test, x_test, variable):
     color = [image.item(y_test, x_test, 0), image.item(y_test, x_test, 1), image.item(y_test, x_test, 2)]
@@ -43,10 +43,13 @@ def clean_image():
 
 root = tkinter.Tk()
 root.withdraw()
+user32 = ctypes.windll.user32
+screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
 file_path = filedialog.askopenfilename()
 image = cv2.imread(file_path)
 cleaned = cv2.imread(file_path)
 clean_image()
+display = cv2.resize(cleaned, ((cleaned.shape[0] * 2), cleaned.shape[1]))
 size = image.shape
 # (Y,X)
 center = [int(size[1] / 2), int(size[0] / 2)]
@@ -74,10 +77,12 @@ while True:
     segments.append(index)
     cv2.line(image, (line[1][0], line[1][1]), (line[0][0], line[0][1]), (255, 255, 255), 1)
     cv2.line(cleaned, (line[1][0], line[1][1]), (line[0][0], line[0][1]), (0, 0, 0), 1)
-    image_output_1 = cv2.resize(image, (700, 700))
-    image_output_2 = cv2.resize(cleaned, (700, 700))
-    cv2.imshow('output_1', image_output_1)
-    cv2.imshow('output_2', image_output_2)
+
+    display[0: display.shape[0], 0: int(display.shape[1]/2)] = image
+    display[0: display.shape[0], int(display.shape[1]/2): display.shape[1]] = cleaned
+    display_show = cv2.resize(display, (screensize[0] - 100 , screensize[1] - 200))
+
+    cv2.imshow('output', display_show)
     cv2.waitKey(10)
     lines += 1
     if bigger[0] == 0 or lines == 1800:

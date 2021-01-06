@@ -12,6 +12,7 @@ As bibliotecas utilizadas foram:
 * Nativas
    * Tkinter
    * Math
+   * Ctypes
 * Externas
    * OpenCV
 
